@@ -1,6 +1,7 @@
 ﻿import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import Home from '../components/Home';
 
 //Resource: https://www.youtube.com/watch?v=IIMUXbkKzW0
 
@@ -8,6 +9,10 @@ import { connect } from 'react-redux';
  * State should have a type based off of some props made, but we're not going to do that yet
  * @param state
  */
-function mapStaetToProps(state) {
-
+function mapStateToProps(state) {
+    return {
+        users: state.users
+    };
 }
+
+export default connect(mapStateToProps)(Home);

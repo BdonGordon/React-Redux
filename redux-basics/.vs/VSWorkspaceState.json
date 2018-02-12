@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\containers",
+    "\\src\\routes",
+    "\\src\\routes\\Home",
+    "\\src\\routes\\Home\\components",
+    "\\src\\routes\\Home\\containers",
+    "\\src\\store"
+  ],
+  "SelectedNode": "\\src\\store\\reducers.ts",
+  "PreviewInSolutionExplorer": false
+}
