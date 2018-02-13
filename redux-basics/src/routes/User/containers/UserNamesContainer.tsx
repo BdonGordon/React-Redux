@@ -2,7 +2,7 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Home from '../components/UserNames';
-import { selectUser } from '../../../actions/index';
+import { selectUser } from '../../../modules/users';
 
 //Resource: https://www.youtube.com/watch?v=IIMUXbkKzW0
 

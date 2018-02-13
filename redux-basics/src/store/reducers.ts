@@ -1,6 +1,6 @@
 ﻿import { combineReducers } from 'redux';
-import UserReducer from './reducer-users';
-import activeUserReducer from '../store/reducer-active-user';
+import UserReducer from '../data/user-base';
+import { activeUserReducer } from '../modules/users';
 
 /**
 * This is where all the reducers in the application will be combined (just like SRED)

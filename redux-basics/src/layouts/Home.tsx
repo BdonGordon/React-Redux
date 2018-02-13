@@ -12,6 +12,7 @@ class Home extends React.Component {
                 <UserNames />
                 <hr />
                 <h4>User Details </h4>
+                
             </div>
             );
     }
