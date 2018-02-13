@@ -1,5 +1,5 @@
 ﻿import * as React from 'react';
-import { HomeProps } from '../containers/HomeContainer';
+import { HomeProps } from '../containers/UserNamesContainer';
 
 /*interface SampleProps {
     users: Array<any>;
@@ -23,12 +23,9 @@ class Home extends React.Component<HomeProps.IProps, null> {
     render() {
         return (
             <div className="App">
-                <h4> Username List: </h4>
                 <ul>
                     {this.createList()}
                 </ul>
-                <hr />
-                <h4> User Details: </h4>
             </div>
         );
     }

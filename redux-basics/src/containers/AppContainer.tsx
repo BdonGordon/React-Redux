@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
 import { createStore } from 'redux';
 import allReducers from '../store/reducers';
-import Home from '../routes/Home/index'; //Grabbing it from index gets rid of the error "property 'users' is missing in type '{}'." 
+import Home from '../layouts/Home'; //Grabbing it from index gets rid of the error "property 'users' is missing in type '{}'." 
 import { Provider } from 'react-redux';
 
 //create a constant variable that refers to the createStore method from redux

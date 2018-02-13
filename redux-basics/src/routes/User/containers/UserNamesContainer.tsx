@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Home from '../components/Home';
+import Home from '../components/UserNames';
 import { selectUser } from '../../../actions/index';
 
 //Resource: https://www.youtube.com/watch?v=IIMUXbkKzW0
