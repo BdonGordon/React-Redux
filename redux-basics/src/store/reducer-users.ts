@@ -1,6 +1,7 @@
 ﻿/**
 * This class is only used to create a reducer of users (pre-defined). These
-* are the list of objects that we want saved in our store
+* are the list of objects that we want saved in our store.
+* We never really want to change these pieces of data (ie. always 3 users)
 **/
 
 export default function () {
