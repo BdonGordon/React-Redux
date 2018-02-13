@@ -1,6 +1,16 @@
 import * as React from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+
+interface IProps {
+    user: string;
+}
 
 class UserDetails extends React.Component {
+    constructor(props: any) {
+        super(props);
+    }
+
     render() {
         return (
             <div>
@@ -10,4 +20,10 @@ class UserDetails extends React.Component {
     }
 }
 
-export default UserDetails;
+function mapStateToProps(state) {
+    return {
+        user: state.activeUser
+    };
+}
+
+export default connect(mapStateToProps)(UserDetails);
