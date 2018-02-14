@@ -2,13 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\containers",
     "\\src\\routes",
-    "\\src\\routes\\Home",
-    "\\src\\routes\\Home\\components",
-    "\\src\\routes\\Home\\containers",
-    "\\src\\store"
+    "\\src\\routes\\User",
+    "\\src\\routes\\UserDetails",
+    "\\src\\routes\\UserDetails\\components",
+    "\\src\\routes\\UserDetails\\containers"
   ],
-  "SelectedNode": "\\src\\store\\reducers.ts",
+  "SelectedNode": "\\src\\routes\\UserDetails\\containers\\UserDetailsContainer.tsx",
   "PreviewInSolutionExplorer": false
 }

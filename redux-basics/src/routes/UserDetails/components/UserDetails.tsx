@@ -1,29 +1,31 @@
 import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { UserDetailProps } from '../containers/UserDetailsContainer';
 
-interface IProps {
-    user: string;
-}
+/*const initialState: UserDetailProps.IState = {
+    id: 0,
+    first: '',
+    last: '',
+    age: 0,
+    description: ''
+};*/
 
-class UserDetails extends React.Component {
-    constructor(props: any) {
+//<UserDetailProps.IProps, UserDetailProps.IState>
+
+class UserDetails extends React.Component<UserDetailProps.IProps, null> {
+    constructor(props: UserDetailProps.IProps) {
         super(props);
     }
 
     render() {
         return (
             <div>
-                <p> User details are here</p>
+                <h5>Brandon Gordon </h5>
+                <h5> {this.props.user.first} </h5>
             </div>
         );
     }
 }
-
-function mapStateToProps(state) {
-    return {
-        user: state.activeUser
-    };
-}
-
-export default connect(mapStateToProps)(UserDetails);
+//<h5> {this.props.user.first} </h5>
+export default UserDetails;

@@ -1,8 +1,9 @@
 ﻿import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Home from '../components/UserNames';
+import UserNames from '../components/UserNames';
 import { selectUser } from '../../../modules/users';
+import { IUser } from '../../../models/User';
 
 //Resource: https://www.youtube.com/watch?v=IIMUXbkKzW0
 
@@ -10,16 +11,16 @@ import { selectUser } from '../../../modules/users';
  * This namespace is a good convention to follow as it will allow me to utilize the IProps, which extends
  * all the interfaces, to use the properties within each one. 
  */
-export namespace HomeProps {
-    export interface SampleProps {
-        users: Array<any>;
+export namespace UserNameProps {
+    export interface IStateProps {
+        users: Array<IUser>;
     }
 
     export interface IDispatchProps {
-        selectUser: (user: any) => { selectUser } ; 
+        selectUser: (user: IUser) => { selectUser }; 
     }
 
-    export interface IProps extends SampleProps, IDispatchProps { }
+    export interface IProps extends IStateProps, IDispatchProps { }
 }
 
 /**
@@ -37,8 +38,8 @@ function mapStateToProps(state) {
  * the Redux
  * @param dispatch ==> just calling a function
  */
-function matchDispatchToProps(dispatch) {
+function mapDispatchToProps(dispatch) {
     return bindActionCreators({ selectUser: selectUser }, dispatch);
 }
 
-export default connect(mapStateToProps, matchDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(UserNames);

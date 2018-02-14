@@ -1,11 +1,7 @@
 ﻿import * as React from 'react';
-import { HomeProps } from '../containers/UserNamesContainer';
+import { UserNameProps } from '../containers/UserNamesContainer';
 
-/*interface SampleProps {
-    users: Array<any>;
-}*/
-
-class Home extends React.Component<HomeProps.IProps, null> {
+class UserNames extends React.Component<UserNameProps.IProps, null> {
     constructor(props: any) {
         super(props);
     }
@@ -31,4 +27,4 @@ class Home extends React.Component<HomeProps.IProps, null> {
     }
 }
 
-export default Home;
+export default UserNames;
